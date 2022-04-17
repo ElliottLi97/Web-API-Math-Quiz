@@ -14,26 +14,6 @@ var questionarray = [
 var name = localStorage.getItem("name");
 var score = localStorage.getItem("score");
 
-function countdown() { //Countdown timer and display ends the game if timer reaches zero
-   
-    var timeInterval = setInterval(function () {
-      if (gamestate == "notwon"){
-        timeLeft--;
-        timerEl.textContent = timeLeft + " seconds left.";
-
-      if(timeLeft===1) {
-        timerEl.textContent = timeLeft + " second left."
-      }
-  
-      if(timeLeft < 0) { 
-        clearInterval(timeInterval);
-        timerEl.textContent = ""
-        gameover();
-      }
-    }
-    }, 1000 );
-  }
-
 startbutton.addEventListener("click", function(){ 
   gamestate = "notwon"
   countdown()
