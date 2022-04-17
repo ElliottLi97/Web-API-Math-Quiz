@@ -1,0 +1,34 @@
+.container {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+  
+  .welcome {
+    margin-bottom: 20px;
+  }
+  
+  #main {
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 100%;
+    height: 200px;
+  }
+  
+  #read {
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    height: 25px;
+  }
+  
+  #button-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  body{
+    display: flex;
+  }
