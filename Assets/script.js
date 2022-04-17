@@ -15,7 +15,6 @@ var name = localStorage.getItem("name");
 var score = localStorage.getItem("score");
 function countdown() {
   
-    // TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
     var timeInterval = setInterval(function () {
       if (gamestate == "notwon"){
         timeLeft--;
@@ -96,11 +95,12 @@ function randomquestion () {
     gamestate = "won"
     console.log(localStorage)
     questionarray = [
-      'Question:1<div id = "button-box"><button data-state="correct">1</button><button data-state="wrong">2</button><button>3</button><button>4</button></div><div id = "read"></div>',
-      'Question:2<div id = "button-box"><button data-state="correct">1</button><button data-state="wrong">2</button><button>3</button><button>4</button></div><div id = "read"></div>',
-      'Question:3<div id = "button-box"><button data-state="correct">1</button><button data-state="wrong">2</button><button>3</button><button>4</button></div><div id = "read"></div>',
-      'Question:4<div id = "button-box"><button data-state="correct">1</button><button data-state="wrong">2</button><button>3</button><button>4</button></div><div id = "read"></div>'
-      ]
+      '(17 - 7) x 6 + 2 = ?<div id = "button-box"><button data-state="wrong">80</button><button data-state="wrong">23</button><button data-state="wrong">76</button><button data-state="correct">62</button></div><div id = "read"></div>',
+      '21 / 3 + 3 x 9 = ?<div id = "button-box"><button data-state="correct">34</button><button data-state="wrong">90</button><button data-state="wrong">21/30</button><button data-state="wrong">4</button></div><div id = "read"></div>',
+      '12 x 3 - 10 = ?<div id = "button-box"><button data-state="correct">26</button><button data-state="wrong">-84</button><button data-state="wrong">24</button><button data-state="wrong">15</button></div><div id = "read"></div>',
+      '9 + 10 = ?<div id = "button-box"><button data-state="wrong">29</button><button data-state="correct">19</button><button data-state="wrong">12</button><button data-state="wrong">17</button></div><div id = "read"></div>',
+      '9 x 9 = ?<div id = "button-box"><button data-state="correct">81</button><button data-state="wrong">9</button><button data-state="wrong">49</button><button data-state="wrong">36</button></div><div id = "read"></div>'
+    ]
     gamewin()
     return
   }
